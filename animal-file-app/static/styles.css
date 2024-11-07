@@ -1,0 +1,84 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 700px; /* Increased max-width */
+    padding: 30px; /* Increased padding */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em; /* Increased font size */
+    color: #00796b; /* Teal color for headings */
+}
+
+.animal-selection, .file-upload {
+    padding: 20px; /* Increased padding */
+    border: 1px solid #b2dfdb; /* Light teal border */
+    border-radius: 8px;
+    background-color: #e0f2f1; /* Light teal background */
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 1.2em; /* Increased font size */
+    cursor: pointer;
+    color: #004d40; /* Dark teal color for labels */
+}
+
+input[type="checkbox"] {
+    margin-right: 12px;
+    transform: scale(1.2); /* Make checkboxes larger */
+}
+
+#animal-image {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#animal-image img {
+    max-width: 120px; /* Increased image size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload input[type="file"] {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em; /* Increased font size */
+}
+
+#file-details {
+    margin-top: 15px;
+    font-size: 1em; /* Increased font size */
+    color: #004d40; /* Dark teal color for file details */
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
